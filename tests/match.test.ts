@@ -170,10 +170,9 @@ describe('cancelling', () => {
     const cancelled = w.matches.cancelOffer(o.id);
     expect(cancelled.map((m) => m.id).sort()).toEqual([m1.id, m2.id]);
     expect(w.store.offers.get(o.id)).toMatchObject({ status: 'cancelled', seatsFree: 2 });
-    // Requests keep their matched status: the rider was told they had a ride
-    // and the office follows up by hand.
-    expect(w.store.requests.get(r1.id)?.status).toBe('matched');
-    expect(w.store.requests.get(r2.id)?.status).toBe('matched');
+    // R8: the riders have no ride any more, so their requests are open again.
+    expect(w.store.requests.get(r1.id)?.status).toBe('open');
+    expect(w.store.requests.get(r2.id)?.status).toBe('open');
     expect(codeOf(() => w.matches.cancelOffer(o.id))).toBe('OFFER_NOT_OPEN');
     expect(codeOf(() => w.matches.cancelOffer('O99'))).toBe('UNKNOWN_OFFER');
   });
@@ -186,6 +185,21 @@ describe('cancelling', () => {
     w.matches.complete(match.id);
     expect(w.matches.cancelOffer(o.id)).toEqual([]);
     expect(w.store.matches.get(match.id)?.status).toBe('completed');
+    expect(w.store.requests.get(match.requestId)?.status).toBe('matched');
+  });
+
+  it('lets a request reopened by cancelOffer be proposed again (R8)', () => {
+    const w = world();
+    const cancelledOffer = offer(w, driver(w, 'Hana'), { seats: 1 });
+    const r = request(w, rider(w, 'Mateo'));
+    const first = w.matches.propose(r.id).match;
+    w.matches.cancelOffer(cancelledOffer.id);
+    expect(w.store.matches.get(first.id)?.status).toBe('cancelled');
+
+    const backup = offer(w, driver(w, 'Ingrid'), { seats: 1 });
+    const second = w.matches.propose(r.id).match;
+    expect(second.offerId).toBe(backup.id);
+    expect(w.store.requests.get(r.id)?.status).toBe('matched');
   });
 });
 
