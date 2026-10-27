@@ -130,7 +130,7 @@ export class MatchService {
     return updated;
   }
 
-  /** R8: every live match on the offer is cancelled and its seat released. */
+  /** R8: every live match on the offer is cancelled, its seat released and its request reopened. */
   cancelOffer(offerId: string): readonly Match[] {
     const offer = this.offer(offerId);
     if (offer.status === 'cancelled') throw new DomainError('OFFER_NOT_OPEN', `Offer ${offer.id} is already cancelled`);
@@ -143,6 +143,10 @@ export class MatchService {
         const done: Match = { ...m, status: 'cancelled' };
         this.store.matches.put(done);
         cancelled.push(done);
+        const request = this.store.requests.get(m.requestId);
+        if (request !== undefined && request.status === 'matched') {
+          this.store.requests.put({ ...request, status: 'open' });
+        }
         const mutable = offer as Mutable<Offer>;
         mutable.seatsFree += 1;
       }
