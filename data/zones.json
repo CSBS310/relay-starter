@@ -1,0 +1,22 @@
+{
+  "zones": [
+    "gresham",
+    "troutdale",
+    "fairview",
+    "boring",
+    "sandy",
+    "estacada",
+    "cascade-locks",
+    "hood-river"
+  ],
+  "adjacency": {
+    "gresham": ["troutdale", "fairview", "boring"],
+    "troutdale": ["gresham", "fairview", "cascade-locks"],
+    "fairview": ["gresham", "troutdale"],
+    "boring": ["gresham", "sandy", "estacada"],
+    "sandy": ["boring"],
+    "estacada": ["boring"],
+    "cascade-locks": ["troutdale", "hood-river"],
+    "hood-river": ["cascade-locks"]
+  }
+}

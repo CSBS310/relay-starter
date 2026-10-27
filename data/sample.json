@@ -1,0 +1,503 @@
+{
+  "people": [
+    {
+      "id": "P01",
+      "name": "Marisol Vega",
+      "role": "driver",
+      "homeZone": "sandy"
+    },
+    {
+      "id": "P02",
+      "name": "Deshawn Pruitt",
+      "role": "rider",
+      "homeZone": "estacada"
+    },
+    {
+      "id": "P03",
+      "name": "Hana Okafor",
+      "role": "driver",
+      "homeZone": "gresham"
+    },
+    {
+      "id": "P04",
+      "name": "Tobias Lindqvist",
+      "role": "rider",
+      "homeZone": "troutdale"
+    },
+    {
+      "id": "P05",
+      "name": "Priya Raman",
+      "role": "both",
+      "homeZone": "hood-river"
+    },
+    {
+      "id": "P06",
+      "name": "Caleb Whitlock",
+      "role": "rider",
+      "homeZone": "fairview"
+    },
+    {
+      "id": "P07",
+      "name": "Ingrid Solberg",
+      "role": "driver",
+      "homeZone": "troutdale"
+    },
+    {
+      "id": "P08",
+      "name": "Mateo Castellanos",
+      "role": "rider",
+      "homeZone": "gresham"
+    },
+    {
+      "id": "P09",
+      "name": "Yuki Tanabe",
+      "role": "rider",
+      "homeZone": "cascade-locks"
+    },
+    {
+      "id": "P10",
+      "name": "Rowan Blackfeather",
+      "role": "driver",
+      "homeZone": "boring"
+    },
+    {
+      "id": "P11",
+      "name": "Sunniva Haug",
+      "role": "rider",
+      "homeZone": "sandy"
+    },
+    {
+      "id": "P12",
+      "name": "Elias Moreau",
+      "role": "both",
+      "homeZone": "gresham"
+    },
+    {
+      "id": "P13",
+      "name": "Naledi Mokoena",
+      "role": "rider",
+      "homeZone": "boring"
+    },
+    {
+      "id": "P14",
+      "name": "Finn Gallagher",
+      "role": "driver",
+      "homeZone": "hood-river"
+    }
+  ],
+  "offers": [
+    {
+      "id": "O01",
+      "driverId": "P03",
+      "date": "2026-11-03",
+      "fromZone": "gresham",
+      "arriveBy": "08:50",
+      "departsAfter": "07:40",
+      "seats": 3,
+      "seatsFree": 2,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O02",
+      "driverId": "P01",
+      "date": "2026-11-03",
+      "fromZone": "sandy",
+      "arriveBy": "08:50",
+      "departsAfter": "07:20",
+      "seats": 3,
+      "seatsFree": 2,
+      "viaZones": [
+        "boring"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O03",
+      "driverId": "P07",
+      "date": "2026-11-05",
+      "fromZone": "troutdale",
+      "arriveBy": "09:15",
+      "departsAfter": "08:00",
+      "seats": 2,
+      "seatsFree": 1,
+      "viaZones": [
+        "fairview"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O04",
+      "driverId": "P03",
+      "date": "2026-11-05",
+      "fromZone": "gresham",
+      "arriveBy": "08:50",
+      "departsAfter": "07:40",
+      "seats": 3,
+      "seatsFree": 2,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O05",
+      "driverId": "P14",
+      "date": "2026-11-10",
+      "fromZone": "hood-river",
+      "arriveBy": "08:45",
+      "departsAfter": "07:00",
+      "seats": 2,
+      "seatsFree": 2,
+      "viaZones": [
+        "cascade-locks"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O06",
+      "driverId": "P10",
+      "date": "2026-11-10",
+      "fromZone": "boring",
+      "arriveBy": "08:45",
+      "departsAfter": "07:30",
+      "seats": 4,
+      "seatsFree": 3,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O07",
+      "driverId": "P07",
+      "date": "2026-11-10",
+      "fromZone": "troutdale",
+      "arriveBy": "09:15",
+      "departsAfter": "08:00",
+      "seats": 2,
+      "seatsFree": 1,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O08",
+      "driverId": "P01",
+      "date": "2026-11-17",
+      "fromZone": "sandy",
+      "arriveBy": "08:50",
+      "departsAfter": "07:30",
+      "seats": 3,
+      "seatsFree": 3,
+      "viaZones": [
+        "boring"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O09",
+      "driverId": "P03",
+      "date": "2026-11-17",
+      "fromZone": "gresham",
+      "arriveBy": "08:50",
+      "departsAfter": "07:45",
+      "seats": 2,
+      "seatsFree": 2,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O10",
+      "driverId": "P07",
+      "date": "2026-11-17",
+      "fromZone": "troutdale",
+      "arriveBy": "09:15",
+      "departsAfter": "08:00",
+      "seats": 3,
+      "seatsFree": 2,
+      "viaZones": [
+        "fairview"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O11",
+      "driverId": "P14",
+      "date": "2026-11-17",
+      "fromZone": "hood-river",
+      "arriveBy": "08:45",
+      "departsAfter": "07:15",
+      "seats": 2,
+      "seatsFree": 1,
+      "viaZones": [
+        "cascade-locks"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "O12",
+      "driverId": "P12",
+      "date": "2026-11-18",
+      "fromZone": "gresham",
+      "arriveBy": "10:00",
+      "departsAfter": "08:00",
+      "seats": 3,
+      "seatsFree": 3,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O13",
+      "driverId": "P03",
+      "date": "2026-11-18",
+      "fromZone": "gresham",
+      "arriveBy": "9:30",
+      "departsAfter": "08:00",
+      "seats": 2,
+      "seatsFree": 2,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O14",
+      "driverId": "P10",
+      "date": "2026-11-18",
+      "fromZone": "boring",
+      "arriveBy": "08:45",
+      "departsAfter": "07:30",
+      "seats": 4,
+      "seatsFree": 3,
+      "viaZones": [],
+      "status": "open"
+    },
+    {
+      "id": "O15",
+      "driverId": "P05",
+      "date": "2026-11-18",
+      "fromZone": "hood-river",
+      "arriveBy": "08:30",
+      "departsAfter": "07:00",
+      "seats": 1,
+      "seatsFree": 1,
+      "viaZones": [
+        "cascade-locks"
+      ],
+      "status": "open"
+    }
+  ],
+  "requests": [
+    {
+      "id": "R01",
+      "riderId": "P08",
+      "date": "2026-11-03",
+      "fromZone": "gresham",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    },
+    {
+      "id": "R02",
+      "riderId": "P13",
+      "date": "2026-11-03",
+      "fromZone": "boring",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    },
+    {
+      "id": "R03",
+      "riderId": "P06",
+      "date": "2026-11-05",
+      "fromZone": "fairview",
+      "arriveBy": "09:30",
+      "earliest": "07:30",
+      "status": "matched"
+    },
+    {
+      "id": "R04",
+      "riderId": "P08",
+      "date": "2026-11-05",
+      "fromZone": "gresham",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    },
+    {
+      "id": "R05",
+      "riderId": "P09",
+      "date": "2026-11-10",
+      "fromZone": "cascade-locks",
+      "arriveBy": "09:00",
+      "earliest": "06:30",
+      "status": "matched"
+    },
+    {
+      "id": "R06",
+      "riderId": "P11",
+      "date": "2026-11-10",
+      "fromZone": "sandy",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    },
+    {
+      "id": "R07",
+      "riderId": "P04",
+      "date": "2026-11-10",
+      "fromZone": "troutdale",
+      "arriveBy": "09:30",
+      "earliest": "07:30",
+      "status": "matched"
+    },
+    {
+      "id": "R08",
+      "riderId": "P02",
+      "date": "2026-11-17",
+      "fromZone": "estacada",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "open"
+    },
+    {
+      "id": "R09",
+      "riderId": "P08",
+      "date": "2026-11-17",
+      "fromZone": "gresham",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "open"
+    },
+    {
+      "id": "R10",
+      "riderId": "P06",
+      "date": "2026-11-17",
+      "fromZone": "fairview",
+      "arriveBy": "09:30",
+      "earliest": "07:30",
+      "status": "open"
+    },
+    {
+      "id": "R11",
+      "riderId": "P09",
+      "date": "2026-11-17",
+      "fromZone": "cascade-locks",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    },
+    {
+      "id": "R12",
+      "riderId": "P04",
+      "date": "2026-11-17",
+      "fromZone": "troutdale",
+      "arriveBy": "09:30",
+      "earliest": "07:30",
+      "status": "matched"
+    },
+    {
+      "id": "R13",
+      "riderId": "P08",
+      "date": "2026-11-18",
+      "fromZone": "gresham",
+      "arriveBy": "10:30",
+      "earliest": "07:30",
+      "status": "open"
+    },
+    {
+      "id": "R14",
+      "riderId": "P11",
+      "date": "2026-11-18",
+      "fromZone": "sandy",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "open"
+    },
+    {
+      "id": "R15",
+      "riderId": "P02",
+      "date": "2026-11-18",
+      "fromZone": "estacada",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "open"
+    },
+    {
+      "id": "R16",
+      "riderId": "P13",
+      "date": "2026-11-18",
+      "fromZone": "boring",
+      "arriveBy": "09:00",
+      "earliest": "07:00",
+      "status": "matched"
+    }
+  ],
+  "matches": [
+    {
+      "id": "M01",
+      "offerId": "O01",
+      "requestId": "R01",
+      "createdOn": "2026-11-02",
+      "status": "completed"
+    },
+    {
+      "id": "M02",
+      "offerId": "O02",
+      "requestId": "R02",
+      "createdOn": "2026-11-02",
+      "status": "completed"
+    },
+    {
+      "id": "M03",
+      "offerId": "O03",
+      "requestId": "R03",
+      "createdOn": "2026-11-04",
+      "status": "completed"
+    },
+    {
+      "id": "M04",
+      "offerId": "O04",
+      "requestId": "R04",
+      "createdOn": "2026-11-04",
+      "status": "completed"
+    },
+    {
+      "id": "M05",
+      "offerId": "O05",
+      "requestId": "R05",
+      "createdOn": "2026-11-09",
+      "status": "no-show",
+      "attributedTo": "rider"
+    },
+    {
+      "id": "M06",
+      "offerId": "O06",
+      "requestId": "R06",
+      "createdOn": "2026-11-09",
+      "status": "completed"
+    },
+    {
+      "id": "M07",
+      "offerId": "O07",
+      "requestId": "R07",
+      "createdOn": "2026-11-09",
+      "status": "completed"
+    },
+    {
+      "id": "M08",
+      "offerId": "O11",
+      "requestId": "R11",
+      "createdOn": "2026-11-15",
+      "status": "proposed"
+    },
+    {
+      "id": "M09",
+      "offerId": "O10",
+      "requestId": "R12",
+      "createdOn": "2026-11-15",
+      "status": "confirmed"
+    },
+    {
+      "id": "M10",
+      "offerId": "O14",
+      "requestId": "R16",
+      "createdOn": "2026-11-16",
+      "status": "proposed"
+    }
+  ]
+}
